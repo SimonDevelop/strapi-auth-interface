@@ -32,7 +32,7 @@ AppFactory::setContainer($container);
 $app = AppFactory::create();
 $app->addRoutingMiddleware();
 $app->addBodyParsingMiddleware();
-$displayErrors = true;
+$displayErrors = false;
 $app->addErrorMiddleware($displayErrors, false, false);
 
 // Le container qui compose nos librairies
