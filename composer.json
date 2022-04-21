@@ -1,0 +1,38 @@
+{
+  "name": "simondevelop/strapi-auth",
+  "description": "Simplement des pages pour l'auregistrement d'utilisateur strapi avec gestion des mots de passes oubliés.",
+  "keywords": [
+    "strapi",
+    "slim",
+    "user",
+    "register",
+    "password"
+  ],
+  "homepage": "https://github.com/SimonDevelop/strapi-auth",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "SimonDevelop",
+      "email": "contact@simon-micheneau.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/src/"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "php": ">=7.4",
+    "slim/slim": "^4.10",
+    "slim/psr7": "^1.5",
+    "php-di/php-di": "^6.4",
+    "slim/php-view": "^3.1"
+  },
+  "config": {
+    "process-timeout" : 0
+  },
+  "scripts": {
+    "start": "php -S localhost:8080 -t public public/index.php"
+  }
+}
